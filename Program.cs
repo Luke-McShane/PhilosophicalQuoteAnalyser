@@ -122,10 +122,51 @@ public class QuoteRepository : IRepository<Quote, string>
 
 
 // Create Filehandler interface
-
+public interface IFilerHandler<T> where T : class
+{
+  public void SaveToFile(IEnumerable<T> values, string filePath);
+  public IEnumerable<T> LoadFromFile(string filePath);
+}
 
 // Implement Quote Filehandler
+public class QuoteFileHandler : IFilerHandler<Quote>
+{
+  public IEnumerable<Quote> LoadFromFile(string filePath)
+  {
+    if (!File.Exists(filePath)) throw new FileNotFoundException($"No file can be found using filepath {filePath}.");
+    var quotesLoadedFromFile = File.ReadAllLines(filePath);
 
+  }
+
+  public void SaveToFile(IEnumerable<Quote> values, string filePath)
+  {
+    IEnumerable<string> toWriteToFileArr;
+    string toWriteToFile;
+    foreach (var value in values)
+    {
+      toWriteToFileArr = QuoteToIEnumerable(value);
+      toWriteToFile = string.Join(',', toWriteToFileArr);
+      File.WriteAllText(filePath, toWriteToFile);
+    }
+  }
+
+  private IEnumerable<string> QuoteToIEnumerable(Quote quote)
+  {
+    var result = new List<string>();
+    result.Add(quote.Id.ToString());
+    result.Add(quote.PhilosopherId.ToString());
+    result.Add(quote.Text.ToString());
+    quote.Themes.ToList().ForEach(x => result.Add(x.ToString()));
+    return result;
+  }
+
+  private IEnumerable<Quote> IEnumerableToQuote(IEnumerable<string>)
+  {
+    foreach(var)
+    var result = new Quote();
+
+  }
+}
 
 // Implement Philosopher Filehandler
 
