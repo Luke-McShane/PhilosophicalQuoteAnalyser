@@ -57,27 +57,28 @@ public class PhilosopherRepository : IRepository<Philosopher, string>
   {
     _philosophers = new Dictionary<Guid, Philosopher>();
   }
+
   public void Create(Philosopher entity)
   {
     if (entity.Id == Guid.Empty) entity.Id = Guid.NewGuid();
     _philosophers[entity.Id] = entity;
   }
 
-  public void Delete(Philosopher entity)
-  {
-    if (_philosophers.ContainsKey(entity.Id)) _philosophers.Remove(entity.Id);
-    else throw new KeyNotFoundException($"{entity.Name} not found.");
-  }
-
   public Philosopher Read(Philosopher entity)
   {
     if (_philosophers.ContainsKey(entity.Id)) return _philosophers[entity.Id];
-    else throw new KeyNotFoundException($"The key '{entity.Id}' cannot be found.");
+    else throw new KeyNotFoundException($"The philosopher with key '{entity.Id}' cannot be found.");
   }
 
   public void Update(Philosopher entity, string era)
   {
     _philosophers[entity.Id].Era = era;
+  }
+
+  public void Delete(Philosopher entity)
+  {
+    if (_philosophers.ContainsKey(entity.Id)) _philosophers.Remove(entity.Id);
+    else throw new KeyNotFoundException($"{entity.Name} not found.");
   }
 }
 
@@ -93,12 +94,14 @@ public class QuoteRepository : IRepository<Quote, string>
 
   public void Create(Quote entity)
   {
-    throw new NotImplementedException();
+    if (entity.Id == Guid.Empty) entity.Id = Guid.NewGuid();
+    _quotes[entity.Id] = entity;
   }
 
   public Quote Read(Quote entity)
   {
-    throw new NotImplementedException();
+    if (_quotes.ContainsKey(entity.Id)) return _philosophers[entity.Id];
+    else throw new KeyNotFoundException($"The philosopher with key '{entity.Id}' cannot be found.");
   }
 
   public void Update(Quote entity, string data)
