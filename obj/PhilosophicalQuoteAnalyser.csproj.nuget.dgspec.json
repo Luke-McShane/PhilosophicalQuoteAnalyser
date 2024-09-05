@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Projects\\PhilosophicalQuoteAnalyser\\PhilosophicalQuoteAnalyser.csproj": {}
+    "c:\\Users\\admin\\Projects\\PhilosophicalQuoteAnalyser\\PhilosophicalQuoteAnalyser.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Projects\\PhilosophicalQuoteAnalyser\\PhilosophicalQuoteAnalyser.csproj": {
+    "c:\\Users\\admin\\Projects\\PhilosophicalQuoteAnalyser\\PhilosophicalQuoteAnalyser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Projects\\PhilosophicalQuoteAnalyser\\PhilosophicalQuoteAnalyser.csproj",
+        "projectUniqueName": "c:\\Users\\admin\\Projects\\PhilosophicalQuoteAnalyser\\PhilosophicalQuoteAnalyser.csproj",
         "projectName": "PhilosophicalQuoteAnalyser",
-        "projectPath": "C:\\Users\\admin\\Projects\\PhilosophicalQuoteAnalyser\\PhilosophicalQuoteAnalyser.csproj",
+        "projectPath": "c:\\Users\\admin\\Projects\\PhilosophicalQuoteAnalyser\\PhilosophicalQuoteAnalyser.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Projects\\PhilosophicalQuoteAnalyser\\obj\\",
+        "outputPath": "c:\\Users\\admin\\Projects\\PhilosophicalQuoteAnalyser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"

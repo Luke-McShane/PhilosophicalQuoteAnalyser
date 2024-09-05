@@ -1,0 +1,15 @@
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\obj\Debug\net8.0\PhilosophicalQuoteAnalyser.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\obj\Debug\net8.0\PhilosophicalQuoteAnalyser.AssemblyInfoInputs.cache
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\obj\Debug\net8.0\PhilosophicalQuoteAnalyser.AssemblyInfo.cs
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\obj\Debug\net8.0\PhilosophicalQuoteAnalyser.csproj.CoreCompileInputs.cache
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\obj\Debug\net8.0\PhilosophicalQuoteAnalyser.sourcelink.json
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\bin\Debug\net8.0\PhilosophicalQuoteAnalyser.exe
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\bin\Debug\net8.0\PhilosophicalQuoteAnalyser.deps.json
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\bin\Debug\net8.0\PhilosophicalQuoteAnalyser.runtimeconfig.json
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\bin\Debug\net8.0\PhilosophicalQuoteAnalyser.dll
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\bin\Debug\net8.0\PhilosophicalQuoteAnalyser.pdb
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\obj\Debug\net8.0\PhilosophicalQuoteAnalyser.dll
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\obj\Debug\net8.0\refint\PhilosophicalQuoteAnalyser.dll
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\obj\Debug\net8.0\PhilosophicalQuoteAnalyser.pdb
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\obj\Debug\net8.0\PhilosophicalQuoteAnalyser.genruntimeconfig.cache
+c:\Users\admin\Projects\PhilosophicalQuoteAnalyser\obj\Debug\net8.0\ref\PhilosophicalQuoteAnalyser.dll

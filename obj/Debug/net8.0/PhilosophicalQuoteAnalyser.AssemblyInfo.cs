@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhilosophicalQuoteAnalyser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb3a212fd224ee5f4478210c92e3622975b4e476")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07e87aae111294c728923164c02bb12740f8ab32")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhilosophicalQuoteAnalyser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhilosophicalQuoteAnalyser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

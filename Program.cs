@@ -1,6 +1,12 @@
 ﻿// Create Philosopher class
 using System.Runtime.CompilerServices;
 
+var quote1 = new Quote("I am a smartBoi", Guid.NewGuid(), [PhilosophicalThemes.Phenomenology, PhilosophicalThemes.Logic]);
+var quoteFileHandler = new QuoteFileHandler();
+var filePath = @"C:\Users\admin\Projects\PhilosophicalQuoteAnalyser\file.txt";
+quoteFileHandler.SaveToFile([quote1], filePath);
+
+
 public class Philosopher(string name, string era)
 {
   public string Name { get; init; } = name;
@@ -16,9 +22,8 @@ public class Quote
     Text = text;
     PhilosopherId = philosopher;
     Themes = themes;
-
   }
-  public required string Text { get; init; }
+  public string Text { get; init; }
   public Guid Id { get; set; } = Guid.NewGuid();
   public Guid PhilosopherId { get; init; }
   public IEnumerable<PhilosophicalThemes> Themes { get; init; }
@@ -100,7 +105,7 @@ public class QuoteRepository : IRepository<Quote, string>
 
   public Quote Read(Quote entity)
   {
-    if (_quotes.ContainsKey(entity.Id)) return _philosophers[entity.Id];
+    if (_quotes.ContainsKey(entity.Id)) return _quotes[entity.Id];
     else throw new KeyNotFoundException($"The philosopher with key '{entity.Id}' cannot be found.");
   }
 
@@ -133,8 +138,9 @@ public class QuoteFileHandler : IFilerHandler<Quote>
 {
   public IEnumerable<Quote> LoadFromFile(string filePath)
   {
-    if (!File.Exists(filePath)) throw new FileNotFoundException($"No file can be found using filepath {filePath}.");
-    var quotesLoadedFromFile = File.ReadAllLines(filePath);
+    throw new NotImplementedException();
+    // if (!File.Exists(filePath)) throw new FileNotFoundException($"No file can be found using filepath {filePath}.");
+    // var quotesLoadedFromFile = File.ReadAllLines(filePath);
 
   }
 
@@ -144,9 +150,13 @@ public class QuoteFileHandler : IFilerHandler<Quote>
     string toWriteToFile;
     foreach (var value in values)
     {
+      System.Console.WriteLine("Value: " + value.Id.ToString());
+      System.Console.WriteLine("Value: " + value.PhilosopherId.ToString());
+      System.Console.WriteLine("Value: " + value.Text);
+      System.Console.WriteLine("Value: " + value.Themes.ToString());
       toWriteToFileArr = QuoteToIEnumerable(value);
       toWriteToFile = string.Join(',', toWriteToFileArr);
-      File.WriteAllText(filePath, toWriteToFile);
+      File.AppendAllText(filePath, toWriteToFile);
     }
   }
 
@@ -160,10 +170,11 @@ public class QuoteFileHandler : IFilerHandler<Quote>
     return result;
   }
 
-  private IEnumerable<Quote> IEnumerableToQuote(IEnumerable<string>)
+  private IEnumerable<Quote> IEnumerableToQuote(IEnumerable<string> strings)
   {
-    foreach(var)
-    var result = new Quote();
+    throw new NotImplementedException();
+    // foreach (var)
+    // var result = new Quote();
 
   }
 }
